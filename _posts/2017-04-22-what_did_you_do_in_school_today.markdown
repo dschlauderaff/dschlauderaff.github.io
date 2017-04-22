@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "What did you do in school today?"
-date:   2017-04-22 02:50:43 +0000
+date:   2017-04-21 22:50:44 -0400
 ---
 
 Started learning about hashes, what their use is and how to manipulate them. Hashes can be used to store related data using keys and values. For example, information about a person can be stored as a hash: dave_hash {height: 6'3, weight: 220, looks: devilishly handsome, ... et cetera}
