@@ -45,6 +45,7 @@ shopt -q login_shell && echo 'Login shell' || echo 'Not login shell'
 
 Under Installing Dev tools > The essentials the following line
 > curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
+> 
 is out of date. Replace the 5.x with 6.x
 
 
