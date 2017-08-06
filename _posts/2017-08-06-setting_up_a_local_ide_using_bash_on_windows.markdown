@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Setting up a local IDE using Bash on Windows"
-date:   2017-08-06 00:16:07 +0000
+date:   2017-08-05 20:16:07 -0400
 ---
 
 
@@ -60,7 +60,7 @@ You cannot change Linux files with Windows apps. This can lead to data corruptio
 
 Your ~/code/labs folder will be buried way down in your Windows file structure. The simplest way to deal with this is to find your bash home directory in windows explorer (mine was in C:/users/username/appdata/local/lxss/home/bash_username/code) and pin the labs folder to your quick access list. Not super elegant, but it works just fine.
 
-# NOKOGIRI
+****NOKOGIRI
 Such a pain that it needs it's own header...
 
 Nokogiri can be the bane of your existence if you don't know the workarounds for it. There is a bug in version 1.6.8 that causes a failure to install, and the bundle install will just hang while it tries to keep writing. This also happens to be the version I ran into the most doing labs when I first was trying to setup the Windows IDE. There are two ways around it:
