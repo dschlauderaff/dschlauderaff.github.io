@@ -44,8 +44,10 @@ shopt -q login_shell && echo 'Login shell' || echo 'Not login shell'
 ```
 
 Under Installing Dev tools > The essentials the following line
-> curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
-> 
+```
+curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
+```
+ 
 is out of date. Replace the 5.x with 6.x
 
 
@@ -62,11 +64,12 @@ You cannot change Linux files with Windows apps. This can lead to data corruptio
 Your ~/code/labs folder will be buried way down in your Windows file structure. The simplest way to deal with this is to find your bash home directory in windows explorer (mine was in C:/users/username/appdata/local/lxss/home/bash_username/code) and pin the labs folder to your quick access list. Not super elegant, but it works just fine.
 
 ****NOKOGIRI
-Such a pain that it needs it's own header...
+Such a pain that it needs it's own section...
 
 Nokogiri can be the bane of your existence if you don't know the workarounds for it. There is a bug in version 1.6.8 that causes a failure to install, and the bundle install will just hang while it tries to keep writing. This also happens to be the version I ran into the most doing labs when I first was trying to setup the Windows IDE. There are two ways around it:
 
 1. install some XML libs:
+
 ```
 apt install zlibc zlib1g-dev libxml2 libxml2-dev libxslt1.1 libxslt1-dev
 ```
