@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Hoisting (yo-ho mateys)"
-date:       2017-12-01 21:47:21 +0000
+date:       2017-12-01 16:47:21 -0500
 permalink:  hoisting_yo-ho_mateys
 ---
 
@@ -14,7 +14,7 @@ var a;
 console.log(a);
 ```
 
-The output would be `undefined`, because the variable is not declared until after the assignment was executed. Instead, 2 is logged. Why?
+The output would be `undefined`, because the variable is not declared until after the assignment was executed. Instead, `2` is logged. Why?
 
 Consider another example:
 
@@ -23,7 +23,7 @@ console.log(a);
 var a = 2;
 ```
 
-A top-to-bottom execution of this code would expect a reference error, since the variable is not defined. Inferring from the first example instead, you might think 2 would be logged to the console. Instead, the actual console.log() output is `undefined`. What?
+A top-to-bottom execution of this code would expect a reference error, since the variable is not defined. Inferring from the first example instead, you might think `2` would be logged to the console. Instead, the actual `console.log()` output is `undefined`. What?
 
 This happens because the javascript engine essentially runs your code twice, compiling the code before interpreting it. Part of this compilation associates all declarations with their appropriate scopes. In short, all variable and function declarations	are processed prior to any code being executed. Even if the declaration and assignment are in the same line of code, they are still functionally treated as separate statements by the engine, and executed at different times.
 
@@ -66,8 +66,8 @@ foo();
 
 Important note: function expressions are NOT hoisted:
 
-f```
-oo(); //type error
+```
+foo(); //type error
 var foo = function bar() {
  	     //code
 	  };
